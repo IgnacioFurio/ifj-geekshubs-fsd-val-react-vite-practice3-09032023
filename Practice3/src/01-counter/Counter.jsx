@@ -13,7 +13,11 @@ export const Counter = () => {
     };
 
     const restaUno = () => {
-        setValor(valor - 1)
+        if(valor>0){
+            setValor(valor - 1)
+        }else{
+            setValor(0)
+        };
         console.log(valor);
     };
 
