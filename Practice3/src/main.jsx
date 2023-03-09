@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import { Counter } from './01-counter/Counter';
-import { UserForm } from './02-form/UserForm';
+import { BrowserRouter } from 'react-router-dom';
+import { MainApp } from './03-mainApp/layout/MainApp';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <>
-      <UserForm/>
+      <BrowserRouter>
+        <MainApp/>
+      </BrowserRouter>
     </>
   </React.StrictMode>,
 )
