@@ -18,7 +18,8 @@ export const UserForm = () => {
         
         console.log(valor);
 
-            const {name, value} = target; 
+        const {name, value} = target; 
+        
         setValor(
             {
                 ...valor,
